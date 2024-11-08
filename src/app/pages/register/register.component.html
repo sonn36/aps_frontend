@@ -1,0 +1,8 @@
+<app-default-layout primaryText="Cadastro" btnPrimaryText="Cadastrar-se" btnSecondaryText="Fazer Login"
+    messageHint="Ja possui Login?" (navigate)="navigate()" (submit)="register()">
+    <form [formGroup]="registerForm">
+        <app-form-input formControlName="username" inputName="username" label="usuario" type="text"></app-form-input>
+        <app-form-input formControlName="email" inputName="email" label="e-mail" type="email"></app-form-input>
+        <app-form-input formControlName="password" inputName="password" label="senha" type="password"></app-form-input>
+    </form>
+</app-default-layout>

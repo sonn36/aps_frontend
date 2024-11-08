@@ -1,0 +1,21 @@
+<main>
+
+    <div class="background-panel">
+        <h1>MMA</h1>
+        <h3>Ministerio do Meio Ambiente</h3>
+    </div>
+
+    <div class="form-panel">
+        <h2>{{ primaryText }}</h2>
+        <ng-content></ng-content>
+        <div class="btn-panel">
+            <button class="primary-btn" (click)="submit()">{{ btnPrimaryText }}</button>
+            <span>{{ messageHint }}</span>
+            <button class="secondary-btn" (click)="navigate()">{{ btnSecondaryText }}</button>
+        </div>
+
+
+    </div>
+
+
+</main>

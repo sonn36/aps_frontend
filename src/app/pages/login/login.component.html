@@ -1,0 +1,7 @@
+<app-default-layout primaryText="Acesso ao arquivos" btnPrimaryText="Login" btnSecondaryText="Cadastrar-se"
+    messageHint="Nao possui Login?" (submit)="login()" (navigate)="navigate()">
+    @if (getFinger) {
+        <app-fingerprint></app-fingerprint>
+    }
+    
+</app-default-layout>
